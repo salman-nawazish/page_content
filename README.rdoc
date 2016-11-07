@@ -1,0 +1,56 @@
+== README
+
+* Ruby 2.3.1
+* Rails 4.2.6
+
+== database
+
+* <tt>Rename database.yml.example to databse.yml</tt>
+* <tt>rake db:create && rake db:migrate</tt>
+
+== running server
+
+<tt>rails s</tt>
+
+== Requests
+
+* Content-Type: application/json
+
+* Posting a link for data extraction
+
+Request Type: POST
+URL: http://localhost:3000/contents
+body: {"url": "https://www.google.com/"}
+
+Sample Response:
+
+{
+  "status": "ok",
+  "message": "content created"
+}
+
+
+* Get list of all the links posted 
+
+Request Type: GET
+URL: http://localhost:3000/contents
+
+Sample Response:
+
+{
+  "status": "ok",
+  "links": [
+    {
+      "id": 1,
+      "url": "https://www.google.com/",
+      "created_at": "2016-11-07T20:10:03.197Z",
+      "updated_at": "2016-11-07T20:10:03.197Z"
+    }
+  ]
+}
+
+
+
+
+
+

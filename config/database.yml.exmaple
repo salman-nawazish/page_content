@@ -1,0 +1,6 @@
+  development:
+    adapter: postgresql
+    encoding: utf8
+    database: page_content
+    host: localhost
+
