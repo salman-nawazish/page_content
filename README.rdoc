@@ -5,7 +5,7 @@
 
 == database
 
-* <tt>Rename database.yml.example to databse.yml</tt>
+* <tt>Rename database.yml.example to database.yml</tt>
 * <tt>rake db:create && rake db:migrate</tt>
 
 == running server
